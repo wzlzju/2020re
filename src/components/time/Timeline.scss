@@ -1,0 +1,52 @@
+@import '@/App.scss';
+
+
+.timeline-contain{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.timeline-contain svg{
+	position: absolute;
+    opacity: 0.8;
+    margin: 10px auto;
+    /*border: 1px dashed gray;*/
+}
+
+.zoom-contain {
+	pointer-events: auto;
+}
+.brush-contain{
+	pointer-events: none; 
+}
+.brush-contain g{
+	pointer-events: auto;
+	fill: none;
+}
+
+
+.brush-contain rect.selection{
+	/*fill: rgb(46, 117, 182);*/
+	/*fill: rgb(191, 191, 191);*/
+	fill: $publicColor;
+	stroke-width: 0;
+}
+.brush-contain rect.handle{
+	/*fill: rgb(46, 117, 182);*/
+	/*fill: rgb(191, 191, 191);*/
+	fill: $publicColor;
+	opacity: 1;
+}
+.brush-contain rect.overlay{
+	pointer-events: none;
+	/*fill: rgb(46, 117, 182);*/
+	/*fill: rgb(191, 191, 191);*/
+	fill: $publicColor;
+	opacity: 0.2
+}
+
+

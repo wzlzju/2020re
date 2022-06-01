@@ -1,0 +1,42 @@
+#map{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+#map-view{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.deck-map{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.timeline-area{
+    position:  absolute;
+    left:  calc(50% - 300px);
+    z-index: 999;
+    /*border: 1px dashed gray;*/
+    width: 600px;
+    bottom: 20px;
+}
+
+
+.ant-drawer-content{
+    /*padding: 5px 0;*/
+}
+.ant-collapse-item{
+    background-color: #ffffff;
+}
+.ant-drawer-body{
+    /*padding: 10px;*/
+}
+
+.ant-drawer-wrapper-body::-webkit-scrollbar { 
+    width: 0 !important
+}

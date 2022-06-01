@@ -1,0 +1,23 @@
+.app{
+	height: 99%;
+	width: 100%;
+}
+
+.config-btn{
+	position: absolute;
+    bottom: 10px;
+    right: 10px;
+	font-size: 25px;
+}
+
+
+.legend-area{
+    position: absolute;
+    left: 11px;
+    bottom: 10px;
+    width: 350px;
+    height: 160px;
+    padding: 5px;
+    /*background-color: #FFFBF5;*/
+    background-color: #fff;
+}

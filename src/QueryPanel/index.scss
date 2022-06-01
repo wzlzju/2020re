@@ -1,0 +1,29 @@
+$grid-line-color : #000000;
+$grid-line-size : 30px;
+
+.query-app{
+  	position: relative;
+	height: 99%;
+	width: 100%;
+    overflow-y: scroll;
+    background-color: #FFFBF5;
+    /*14292f*/
+    background: -webkit-linear-gradient(rgba(200,200,200,.16) 1px,transparent 1px),-webkit-linear-gradient(0deg,rgba(200,200,200,.16) 1px,transparent 1px),-webkit-linear-gradient(rgba(200,200,200,.12) 1px,transparent 1px),-webkit-linear-gradient(0deg,rgba(200,200,200,.12) 1px,transparent 1px),-webkit-linear-gradient(rgba(200,200,200,.1) 1px,transparent 1px),-webkit-linear-gradient(0deg,rgba(200,200,200,.1) 1px,transparent 1px);
+    /*background-image: -moz-linear-gradient(rgba(200,200,200,.16) 1px,transparent 1px),-moz-linear-gradient(0deg,rgba(200,200,200,.16) 1px,transparent 1px),-moz-linear-gradient(rgba(200,200,200,.12) 1px,transparent 1px),-moz-linear-gradient(0deg,rgba(200,200,200,.12) 1px,transparent 1px),-moz-linear-gradient(rgba(200,200,200,.1) 1px,transparent 1px),-moz-linear-gradient(0deg,rgba(200,200,200,.1) 1px,transparent 1px);*/
+    /*background-image: -ms-linear-gradient(rgba(200,200,200,.16) 1px,transparent 1px),-ms-linear-gradient(0deg,rgba(200,200,200,.16) 1px,transparent 1px),-ms-linear-gradient(rgba(200,200,200,.12) 1px,transparent 1px),-ms-linear-gradient(0deg,rgba(200,200,200,.12) 1px,transparent 1px),-ms-linear-gradient(rgba(200,200,200,.1) 1px,transparent 1px),-ms-linear-gradient(0deg,rgba(200,200,200,.1) 1px,transparent 1px);*/
+    background-size: 4em 4em,4em 4em,1em 1em,1em 1em,.5em .5em,.5em .5em;
+}
+.query-app::-webkit-scrollbar { width: 0 !important }
+
+.add-btn{
+	margin: 10px;
+    position: fixed;
+}
+
+.grid{
+    background:
+        -webkit-linear-gradient(top, transparent ($grid-line-size - 1), $grid-line-color $grid-line-size),
+        -webkit-linear-gradient(left, transparent ($grid-line-size - 1), $grid-line-color $grid-line-size)
+        ;
+    background-size: $grid-line-size $grid-line-size ;
+}

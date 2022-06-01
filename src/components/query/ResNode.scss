@@ -1,0 +1,93 @@
+@import './Node.scss';
+@import '@/App.scss';
+
+$navigaHeight : 40px;
+$navigaHeightMargin : 45px;
+$nodeColor : #1890ff;
+$headerLineHeight : 40px;
+
+.naviga{
+	 width: 100%;
+  height: $navigaHeight;
+  margin-bottom: 5px;
+}
+
+.naviga .ant-steps{
+	margin-top: 10px;
+}
+
+.left , .right{
+    height: calc(100% - #{$navigaHeight} - 10px - #{$headerLineHeight});
+}
+
+.left{
+    position: relative;
+  	width: 45%;
+  	float: left;
+}
+
+.right{
+    position: relative;
+  	width: calc(55% - 10px);
+  	float: right;
+    margin : 0 5px 5px;
+}
+
+.naviga , .left , .right{
+  	/*border: 1px dashed black;*/
+}
+
+.config{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__icon{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    &__title{
+
+    }
+    &__entity button{
+      border: 1px dashed $themeColor;
+      margin-left: 10px;
+    }
+    &__entity button:active{
+      border: 1px dashed $themeColor;
+    }
+  }
+
+  &__time{
+    position: relative;
+    height: 60px;
+    width: 100%;
+  }
+
+  .select-contain{
+    width: 100%;
+  }
+}
+
+select{
+    border: 1px dashed $fontColor;
+    text-align: center;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 0;
+    background : none;
+}
+
+
+.divide-left{
+  border-left: 1px solid $themeColor
+}
+
+.submit-btn.type-public.ant-btn-primary {
+    color: #fff;
+    background-color: $publicColor !important;
+    border-color: $publicColor;
+}

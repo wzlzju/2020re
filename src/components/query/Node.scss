@@ -1,0 +1,89 @@
+$nodeColor : #91d5ff;
+
+$backColor : #AFABAB;
+$fontColor : #707070;
+$publicColor: #80B1D3;
+
+
+.node{
+  	width: 100px;
+  	height: 50px;
+  	position: absolute;
+  	/*border: 1px dashed $nodeColor;*/
+  	/*background-color: #f0f0f0*/
+    background-color: #fff;
+    /*cursor: move;*/
+}
+
+.node-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  color: #fff;
+  background-color: $backColor;
+  font-size: 20px;
+  cursor: grab;
+  
+    &__type-icon{
+      margin-left: 10px;
+      color: #fff;
+    }
+    &__btn-area{
+      display: inline-block;
+    }
+    .close-btn , .zoom-btn{
+      /*right: 2px;*/
+      color: #fff;
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      padding: 0;
+      margin: 0 5px;
+    }
+    &__title{
+        width: 160px;
+        outline-style: none ;
+        background: none;
+        text-align: center;
+        border: none;
+        font-weight: 600;
+    }
+}
+
+.submit-btn{
+    height: 30px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.float-box{
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.4);
+}
+
+.header{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.open-btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

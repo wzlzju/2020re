@@ -1,0 +1,43 @@
+$main-color : #707070;
+
+.config-row{
+	margin: 15px 0;
+	padding: 0 ;
+    height: 30px
+}
+
+.config-row .config-label{
+    border-left: 4px #1890ff solid;
+    padding: 0px 8px;
+    font-size: 12px;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.config-row .config-label.sub-row{
+    font-size: 11px;
+}
+.config-row .config-color{
+    height: 20px;
+    margin: 5px 0;
+}
+
+.config-row .ant-slider{
+    margin: 10px 0;
+}
+.config-row .ant-input-number{
+    height: 20px;
+    width:  60px;
+    margin: 5px 0;
+}
+.config-row input{
+    height: 15px;
+    padding: 0 7px;
+}
+.timeline-area{
+    position:  absolute;
+    left:  calc(50% - 300px);
+    z-index: 999;
+    /*border: 1px dashed gray;*/
+    width: 600px;
+    bottom: 20px;
+}

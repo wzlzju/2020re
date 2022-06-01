@@ -1,0 +1,120 @@
+@import './Node.scss';
+
+
+.data-source{
+	display: flex;
+	justify-content: space-around;	
+	padding: 5px;
+	button{
+		width: 23%;
+		height: 45px;
+		border: none;
+		border-radius: 0;
+		font-size: 28px;
+      	color: #fff;
+	}
+}
+
+.input{
+	padding: 0 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__row{
+		height: 30px;
+		width: 100%;
+	  	/*border: 1px dashed black;*/
+		display: flex;
+		align-items: center;	  	
+		justify-content: space-between;
+
+		&__title{
+			display: inline-block;
+			color: $fontColor;
+		}
+
+		&__selectbtn{
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+			color: $fontColor;
+		}
+
+		&__time{
+			text-align: right;
+			width: 160px;
+			input{
+				width: 60px;
+		        outline-style: none ;
+		        border: 0.5px dashed $fontColor;
+		        background: none;
+		        color: $fontColor;
+		        text-align: center;
+			}
+			&--start{
+				margin-right: 10px;
+			}
+			&--end{
+				margin-left: 10px;
+			}
+			.error{
+		        border: 0.5px dashed red !important;
+			}
+		}
+	}
+}
+
+.cond{
+	padding: 0 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	height:  180px;
+	/*border: 1px dashed black;*/
+  	cursor: auto;
+
+	&__row{
+		width: 100%;
+		margin:10px 0;
+	  	&__map{
+	  		height: 150px;
+	  	}
+	  	summary{
+			display: flex;
+			align-items: center;	  	
+			justify-content: space-between;
+
+  		    cursor: pointer;
+    		border: none;
+    		outline: none;
+	  	}
+	  	&__title{
+	  		display: inline-block;
+	  	}
+	  	&__btn{
+	  		display: inline-block;
+	  		font-size: 20px;
+	  	}
+	}
+}
+
+.cond::-webkit-scrollbar { width: 0 !important }
+
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after{
+	background-color: #bfbfbf;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #bfbfbf;
+    border-color: #bfbfbf;
+}
+.ant-checkbox-checked::after{
+	border-color: #bfbfbf;
+}
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #bfbfbf;
+}
